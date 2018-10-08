@@ -20,7 +20,7 @@ set(EXECUTABLE_OUTPUT_PATH ../bin)
 
 include_directories( src )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
-include_directories("C:/ThirdLib/PCL 1.8.0/3rdParty/Boost/include/boost-1_59")
+include_directories("C:/Boost/include/boost-1_59")
 
 file(GLOB_RECURSE APS_SRC "*.cpp" "*.h")
 add_executable( APS ${APS_SRC})

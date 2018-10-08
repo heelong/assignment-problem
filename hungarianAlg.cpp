@@ -263,6 +263,7 @@ void AssignmentProblemSolver::step2b(assignments_t& assignment, distMatrix_t& di
 // --------------------------------------------------------------------------
 void AssignmentProblemSolver::step3(assignments_t& assignment, distMatrix_t& distMatrix, BoolVec& starMatrix, BoolVec& newStarMatrix, BoolVec& primeMatrix, BoolVec& coveredColumns, BoolVec& coveredRows, const size_t& nOfRows, const size_t& nOfColumns, const size_t& minDim)
 {
+	//用尽量少的横线竖线去覆盖矩阵，当覆盖列数等于矩阵最小纬度时，完成匹配
 	bool zerosFound = true;
 	while (zerosFound)
 	{
